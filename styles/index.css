@@ -1,3 +1,130 @@
-h1{
-    color: aquamarine;
+
+/***************************Import Google Fonts*********************************/
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&family=Work+Sans:wght@100&display=swap');
+
+/***************************Common font family**********************************/
+    body{
+        font-family: 'Work Sans', sans-serif;
+
+    }
+
+/***************************Header Styles**********************************/
+
+    .headerContainer{
+        background-color: rgba(255, 144, 14, 0.1);
+        width: 100%;
+    
+    }
+    .header{
+         display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 228px;
+        align-items: center;         
+    
+    }
+    .headerTitle{
+        font-size: 45px;
+        font-weight: 700;
+        color: #131313;
+    }
+    nav{
+        margin-right: 240px;
+    }
+    nav a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        color: #131313;
+        margin-left: 25px;
+    }
+    nav a:hover{
+        
+        background-color: #FF900E;
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+    }
+/*****************Responsive Area**********************/
+
+@media only screen and (max-width: 576px) {
+        .header{
+            width: 100%;
+            display: flex;
+            flex-direction:column;
+            margin-left: 0;
+        }
+        nav{
+            width: 100%;
+            margin-left: 380px;
+        }
+}
+
+/****************************Banner Area Start******************************/
+.bannerContainer{
+    width: 100%;
+}
+.bannerInfo{
+   width: 862px;
+   margin-left:300px;
+   text-align:center;
+   margin-top: 117px;
+}
+.bannerTitle{
+    text-align: center;
+    font-size: 64px ;
+    font-weight: 700;
+    color:#131313 ;
+}
+.bannerDescription{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #727272;
+}
+.bannerBtn{
+    color: #ffff;
+    background-color: #FF900E;
+    border-radius: 5px;
+    border: none;
+    width: 180px;
+    height: 64px;
+    margin-top: 32px;
+    font-size: 20px;
+}
+.bannerBtn:hover{
+    color: #ffff;
+    background-color:black;
+    border-radius: 5px;
+    border: none;
+    width: 180px;
+    height: 64px;
+    margin-top: 32px;
+    font-size: 20px;
+}
+.bannerImg img{
+    margin-left: 240px;
+    height: 400px;
+    width: 65%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+/********************Responsive Area********************/
+
+@media only screen and (max-width: 576px) {
+    
+    .headerContainer{
+        background-color: rgba(255, 144, 14, 0.1);
+        width: 100%;
+    
+        }
+        .bannerInfo{
+            width: 100%;
+            margin-left: 0;
+        }
+    .bannerImg img{
+        margin-left: 0;
+        width: 100%;
+    }
 }
