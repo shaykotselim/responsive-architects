@@ -6,7 +6,7 @@
 /***************************Common font family**********************************/
     body{
         font-family: 'Work Sans', sans-serif;
-
+        
     }
 
 /***************************Header Styles**********************************/
@@ -48,15 +48,24 @@
 /*****************Responsive Area**********************/
 
 @media only screen and (max-width: 576px) {
+        .headermainContainer{
+                 background-color: rgba(255, 144, 14, 0.1);
+                 width: 100%;
+    }    
         .header{
             width: 100%;
             display: flex;
             flex-direction:column;
-            margin-left: 0;
+            margin-left:0;
+                    
+        }
+        .headerTitle{
+            /* width: 100%; */
+            margin-left: 40px;
         }
         nav{
             width: 100%;
-            margin-left: 380px;
+            margin-left: 370px;
         }
 }
 
@@ -110,21 +119,203 @@
     margin-bottom: 40px;
 }
 
+
+
+
+
+
+
+
 /********************Responsive Area********************/
 
 @media only screen and (max-width: 576px) {
-    
-    .headerContainer{
-        background-color: rgba(255, 144, 14, 0.1);
+    .headermainContainer{
         width: 100%;
+        background-color: rgba(255, 144, 14, 0.1);
+    }
     
+    .bannerInfo{
+            display: flex;
+            flex-direction: column;
+            width: 100%;  
+            margin-left: 10px;
+
+            /* background-color: rgba(255, 144, 14, 0.1); */
         }
-        .bannerInfo{
-            width: 100%;
-            margin-left: 0;
+        .bannerTitle{
+
+            font-size: 26px;
+            font-weight: 700;
+            /* text-align: center; */
+        }
+        .bannerDescription{
+            width: 80%;
+            margin-left: 40px;
+            /* text-align: center; */
         }
     .bannerImg img{
-        margin-left: 0;
-        width: 100%;
+        margin-left: 25px;
+        width: 90%;
+        height: 200px;
+        
     }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/********************* Teams Container Styles*****************************/
+.teamSubContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center ;
+
+}
+.teams{
+    display: grid;
+    grid-template-columns:auto auto;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 80px;
+    margin-left: 250px;
+}
+.team img{
+    height: 242px;
+    width: 242px;
+}
+.teamInfo{
+    width: 568px;
+}
+.teamTitle{
+    color:#727272;
+    font-size: 45px;
+    font-weight: 600;
+    width: 468px;
+}
+.title2{
+    color: #131313;
+}
+.title3{
+    color:#FF900E;
+}
+.teamDescription{   
+    font-size: 16px;
+    font-weight: 600;
+    color: #727272;
+    width: 537px; 
+}
+/*************Responsive Area**************/
+@media only screen and (max-width: 576px) {
+        .teamSubContainer{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .teams{
+            width:100%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); 
+            justify-content: center;
+            margin-left: 40px; 
+        }
+        .team img{
+            width: 80%;
+            margin-left: 30px;
+        }
+        .teamTitle{
+            width: 100%;
+        }
+        .teamInfo{
+            width: 80%;
+            margin-left: 30px;
+        }
+        .teamDescription{
+            width: 100%;
+          
+        }
+}
+/*********************Article Styles*********************/
+.articelContainer{
+    margin-top: 120px;
+    display: flex;
+    gap: 54px   ;
+    align-items: center;
+    margin-left: 140px;
+}
+.articelSubContainer{
+    width: 400px;
+    height: 900px;
+ 
+}
+article{
+    
+    margin-bottom: 10px;
+    line-height: 20px;
+    padding: 5px;   
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15); 
+
+}
+.articel-title{
+    font-size: 45px;
+    color: #131313;
+    font-weight: 600;
+    border-left: 3px solid orangered;
+    padding-left: 15px;
+}
+.articleDescription{
+    font-size: 16px;
+    font-weight: 600;
+    color: #727272;
+}
+.articel-title2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.articleImg img{
+        height: 882px;
+}
+.button{
+    height: 150px;
+    width: 242px;
+    background-color: #FF900E;
+    color: white;
+   text-align: center;
+   padding-top: 15px;
+   border-radius: 5px;
+   transform: translate(550px,-110px);
+}
+.buttonTitle1{
+    font-weight: 700;
+    font-size: 35px;
+}
+.buttonTitle2{
+    font-size: 24px;
+    font-weight: 600;
+}
+/***************Responsive***************/
+@media only screen and (max-width:576px) {
+        .articelContainer{
+            flex-direction: column;
+            margin-left: 0;
+            
+        }
+        .articelSubContainer{
+            width: 90%;
+        }
+        .articleImg img{
+            width: 90%;
+            margin-left: 25px;
+        }
+        .button{
+            transform: translate(235px , -100px);
+        }
 }
