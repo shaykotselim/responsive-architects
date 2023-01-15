@@ -14,14 +14,12 @@
     .headerContainer{
         background-color: rgba(255, 144, 14, 0.1);
         width: 100%;
-    
     }
     .header{
          display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-left: 228px;
         align-items: center;         
-    
     }
     .headerTitle{
         font-size: 45px;
@@ -60,16 +58,16 @@
                     
         }
         .headerTitle{
-            /* width: 100%; */
+    
             margin-left: 40px;
         }
         nav{
-            width: 70%;
-            margin-left: 100px;
-            flex-wrap: wrap;
+            width: 80%;
+            margin-left: 200px;
+            flex-wrap: nowrap;
+
         }
 }
-
 /****************************Banner Area Start******************************/
 .bannerContainer{
     width: 100%;
@@ -121,12 +119,6 @@
 }
 
 
-
-
-
-
-
-
 /********************Responsive Area********************/
 
 @media only screen and (max-width: 576px) {
@@ -162,15 +154,6 @@
     }
     
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -319,7 +302,7 @@ article{
         .articleImg img{
             width: 90%;
             margin-left: 25px;
-            margin-top: 50px;
+            margin-top: 150px;
         }
         .button{
             width: 30%;
@@ -369,7 +352,7 @@ article{
   background-color:antiquewhite;
   width: 242px;
   padding: 20px 0;
-  /* filter: grayscale(50%); */
+ 
   border-radius: 5px;
   transform: scale(0.75);
 }
